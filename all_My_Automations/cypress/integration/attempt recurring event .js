@@ -26,25 +26,18 @@ describe('My First Test suite', () => {
     cy.get('.uploader__thumbnail')
     cy.wait(2000) //wait for file upload 
     cy.get('.event__form--section__timing > :nth-child(2) > span').click()
-    cy.get(':nth-child(1) > :nth-child(1) > .el-form-item > .el-form-item__content > .el-date-editor > .el-input__inner').type('May 24,2022')
+    cy.get(':nth-child(1) > :nth-child(1) > .el-form-item > .el-form-item__content > .el-date-editor > .el-input__inner').type('July 02,2021')
     cy.get('.input').select("every day")
-    //cy.contains("day").click()
     cy.get(':nth-child(2) > :nth-child(1) > .el-form-item > .el-form-item__content > .el-date-editor > .el-input__inner').type('00:00')
     cy.get(':nth-child(2) > .el-form-item > .el-form-item__content > .el-date-editor > .el-input__inner').clear().type('18:00')
     cy.get(':nth-child(4) > :nth-child(1) > .el-form-item > .el-form-item__content > .flex > .el-radio > .el-radio__input > .el-radio__inner').click()
     cy.get('.input-number > .el-input__inner').type("4")
-    //cy.get('.first--child > .el-form-item__content > .wrap > .el-row > .el-col-14 > .el-date-editor > .el-input__inner').type('May 24,2022')
-    //cy.get('.first--child > .el-form-item__content > .wrap > .el-row > .el-col-10 > .el-date-editor > .el-input__inner').type('00:00')
-    //cy.wait(1000)
-    //cy.get(':nth-child(2) > .el-form-item__content > .wrap > .el-row > .el-col-14 > .el-date-editor > .el-input__inner').clear().type('May 29,2022')
-    //cy.get(':nth-child(2) > .el-form-item__content > .wrap > .el-row > .el-col-10 > .el-date-editor > .el-input__inner').clear().type('18:00')
-    //cy.get('.last--section > .event__form--section__content > .first--child > .el-form-item__content > .el-input > .el-input__inner').type("www.cnn.com")
+    
     cy.get('[native-type="submit"]').click()
     cy.wait(2000)
     cy.contains('online events').should('be.visible')
 
     cy.get('.online--form__input').select("manually add an event link")
-    //cy.contains("manually").click()
     cy.get('.el-textarea__inner').type("Zoomlinkplaceholdertexts")
     cy.get('.el-button').click()
     
