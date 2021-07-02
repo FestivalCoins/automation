@@ -27,7 +27,7 @@ describe('My First Test suite', () => {
     cy.get('.uploader__thumbnail')
     cy.wait(2000) //wait for file upload 
     cy.get('.event__form--section__timing > :nth-child(2) > span').click()
-    cy.get(':nth-child(1) > :nth-child(1) > .el-form-item > .el-form-item__content > .el-date-editor > .el-input__inner').type('July 02,2021')
+    cy.get(':nth-child(1) > :nth-child(1) > .el-form-item > .el-form-item__content > .el-date-editor > .el-input__inner').type('July 03,2021')
     cy.get('.input').select("every day")
     cy.get(':nth-child(2) > :nth-child(1) > .el-form-item > .el-form-item__content > .el-date-editor > .el-input__inner').type('01:00')
     cy.get(':nth-child(2) > .el-form-item > .el-form-item__content > .el-date-editor > .el-input__inner').clear().type('18:00')
