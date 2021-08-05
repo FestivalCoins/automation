@@ -52,6 +52,9 @@ website(){
 saveEvent(){
   return cy.get('[native-type="submit"]')
 }
+address(){
+return cy.get('.el-col-16 > .el-input > .el-input__inner')
 
+}
 }
 export default event;
