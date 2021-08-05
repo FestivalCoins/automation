@@ -20,14 +20,17 @@ describe('Test', function () {
       Login.yourEventText().should('be.visible')
 })
 
-it('create free ticket',function(){
+it('Paid and invite ticket with transfer fees',function(){
  const Ticket = new ticket()  
  cy.contains('tickets sold').click() 
  Ticket.ticketTab().click()
  Ticket.newTicket().click()
+ Ticket.selectPaidType().click()
+ Ticket.selectInviteonly().click()
  Ticket.ticketName().type(this.data.ticketName)
  Ticket.ticketDesc().type(this.data.ticketDesc)
- Ticket.ticketquantity().type(this.data.ticketQuan)
+ Ticket.ticketPrice().type(this.data.ticketPrice)
+ Ticket.transferFees().click()
  Ticket.saveTicket().click()
 
 

@@ -21,7 +21,7 @@ describe('Test', function () {
       Login.yourEventText().should('be.visible')
 })
 
-it('create single online event',function(){
+it('create single live event',function(){
     const Event = new event()
 
     Event.createnewEvent().click()
