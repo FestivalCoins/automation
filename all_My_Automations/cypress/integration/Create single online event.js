@@ -1,6 +1,9 @@
 // <reference types="cypress" />
+import event from './PageObjects/event'
+
 describe('My First Test suite', () => {
     it('login in and create event!(testcase2)', () => {
+      const ce = new event()
     cy.visit("https://tix-staging.netlify.app/login/")
     //cy.get(':nth-child(5) > .u-button').click()
     cy.get('.login--form__email--input > .el-input__inner').type('nneka@tix.africa')
@@ -8,7 +11,9 @@ describe('My First Test suite', () => {
     cy.get('.login--form__buttons > .u-button').click()
     cy.wait(2000) // wait for landing page
     cy.get('.events--page__header--text').should('be.visible')
-    cy.get('span').click()
+    //cy.get('span').click()
+    ce.createnewEvent().click()
+    cy.pause()
     cy.get('.event-type__personal > .event-type__step').click()
     cy.get('.event-type__buttons > :nth-child(2)').click()
     const eventname = () => Cypress._.random(0, 1e2)
@@ -35,9 +40,9 @@ describe('My First Test suite', () => {
     cy.wait(2000)
     cy.contains('online events').should('be.visible')
 
-    cy.get('.online--form__input').click()
-    cy.contains("manually").click()
+    cy.get('.online--form__input').select("manually add an event link")
     cy.get('.el-textarea__inner').type("Zoomlinkplaceholdertexts")
+    cy.contains("save").should('be.visible')
     cy.get('.el-button').click()
     
 

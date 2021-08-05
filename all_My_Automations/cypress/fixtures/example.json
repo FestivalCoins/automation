@@ -1,5 +1,11 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "email": "nneka@tix.africa",
+  "password": "........",
+  "eventName": "Automated Online Single Event",
+  "eventDesc": "something totally random, cause I mean",
+  "category": "career",
+  "startDay":"May 10,2022",
+  "endDay":"May 24,2022",
+  "endTime":"00:00",
+  "website":"www.tix.africa"
 }
