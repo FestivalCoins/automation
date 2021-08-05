@@ -8,5 +8,9 @@
   "endDay":"May 24,2022",
   "endTime":"00:00",
   "website":"www.tix.africa",
-  "address":"one lekki road "
+  "address":"one lekki road ",
+"ticketName":"First ticket",
+"ticketDesc":"something totally random, cause I mean",
+"ticketPrice":"1000",
+"ticketQuan":"100"
 }

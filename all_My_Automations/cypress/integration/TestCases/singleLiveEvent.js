@@ -1,7 +1,7 @@
 // <reference types="cypress" />
 import event from '../PageObjects/event'
 import login from '../PageObjects/login'
-
+import ticket from '../PageObjects/ticket'
 describe('Test', function () {
     before(function(){
 
