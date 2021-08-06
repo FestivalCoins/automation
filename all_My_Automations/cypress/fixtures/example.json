@@ -1,7 +1,7 @@
 {
   "email": "nneka@tix.africa",
   "password": "........",
-  "eventName": "Automated Single Event",
+  "eventName": "Automated Event",
   "eventDesc": "something totally random, cause I mean",
   "category": "career",
   "startDay":"May 10,2022",
@@ -12,5 +12,6 @@
 "ticketName":"First ticket",
 "ticketDesc":"something totally random, cause I mean",
 "ticketPrice":"1000",
-"ticketQuan":"100"
+"ticketQuan":"100",
+"numberOfOcurrances":"5"
 }

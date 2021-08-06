@@ -33,4 +33,7 @@ transferFees(){
     return cy.get('.el-checkbox__label')
 }
 
+
+
+
 }export default ticket
