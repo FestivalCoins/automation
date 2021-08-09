@@ -47,6 +47,12 @@ it('create Recurring Online event',function(){
     Event.website().type(this.data.website)
     Event.saveEvent().click()
 
+    const Ticket = new ticket()
+    Ticket.selectLinkType()
+    Ticket.addLink()
+    Ticket.saveLink().should('be.visible')
+    Ticket.saveLink().click()
+
 })
 
 

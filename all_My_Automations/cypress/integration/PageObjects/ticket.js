@@ -32,8 +32,15 @@ selectInviteonly(){
 transferFees(){
     return cy.get('.el-checkbox__label')
 }
+selectLinkType(){
 
-
-
+    return cy.get('.online--form__input').select("manually add an event link")
+}
+addLink(){
+   return cy.get('.el-textarea__inner').type("Zoomlinkplaceholdertexts")  
+}
+saveLink(){
+    return cy.get('.el-button > :nth-child(1) > span')
+}
 
 }export default ticket

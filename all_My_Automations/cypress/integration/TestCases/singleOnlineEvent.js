@@ -1,6 +1,7 @@
 // <reference types="cypress" />
 import event from '../PageObjects/event'
 import login from '../PageObjects/login'
+import ticket from '../PageObjects/ticket'
 
 describe('Test', function () {
     before(function(){
@@ -43,7 +44,11 @@ it('create single online event',function(){
     Event.website().type(this.data.website)
     Event.saveEvent().click()
 
-
+    const Ticket = new ticket()
+    Ticket.selectLinkType()
+    Ticket.addLink()
+    Ticket.saveLink().should('be.visible')
+    Ticket.saveLink().click()
 
 })
 
