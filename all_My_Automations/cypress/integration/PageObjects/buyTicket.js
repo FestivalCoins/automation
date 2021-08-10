@@ -20,7 +20,7 @@ buyerPnumber(){
     return cy.get(':nth-child(4) > .el-form-item__content > .el-input > .el-input__inner')
 }
 createorder(){
-  return  cy.contains("order tickets")  
+  return  cy.contains("order")  
 }
 
 }export default buyTicket

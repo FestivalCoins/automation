@@ -19,5 +19,8 @@ yourEventText(){
 
     return cy.get('.events--page__header--text')
 }
+intercomIcon(){
+    return cy.contains('#pane-profile > :nth-child(2) > .el-form > .u-button').should("be.visible")
+}
 
 }export default login;

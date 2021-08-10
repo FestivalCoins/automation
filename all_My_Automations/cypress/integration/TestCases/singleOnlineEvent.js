@@ -1,4 +1,5 @@
-// <reference types="cypress" />
+/// <reference types="Cypress" />
+import cypress from 'cypress'
 import event from '../PageObjects/event'
 import login from '../PageObjects/login'
 import ticket from '../PageObjects/ticket'

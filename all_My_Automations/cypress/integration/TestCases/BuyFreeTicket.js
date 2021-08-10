@@ -19,7 +19,7 @@ describe('Test', function () {
 it('Buy free ticket',function(){
  const BuyTicket = new buyTicket()  
  BuyTicket.register().click()
- BuyTicket.numberOfTickets().select("5")
+ BuyTicket.numberOfTickets().select("1")
  BuyTicket.buyerEmail().type(this.data.buyerEmail)
  BuyTicket.buyerFname().type(this.data.buyerFname)
  BuyTicket.buyerLname().type(this.data.buyerLname)
