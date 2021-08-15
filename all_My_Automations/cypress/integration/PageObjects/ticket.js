@@ -40,7 +40,7 @@ addLink(){
    return cy.get('.el-textarea__inner').type("Zoomlinkplaceholdertexts")  
 }
 saveLink(){
-    return cy.get('.el-button > :nth-child(1) > span')
+    return cy.get('.online--form__btn > .el-button')
 }
 
 }export default ticket
