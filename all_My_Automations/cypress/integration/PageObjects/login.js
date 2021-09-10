@@ -20,7 +20,7 @@ yourEventText(){
     return cy.get('.events--page__header--text')
 }
 intercomIcon(){
-    return cy.contains('#pane-profile > :nth-child(2) > .el-form > .u-button').should("be.visible")
+    return cy.get('.intercom-lightweight-app-launcher-icon-open').should("be.visible")
 }
 
 }export default login;

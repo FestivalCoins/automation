@@ -1,7 +1,7 @@
 // <reference types="cypress" />
 describe('My First Test suite',function ()  {
     it('Update personal information on settings', () => {
-    cy.visit("https://tix-staging.netlify.app/")
+      cy.visit("https://tix-staging.netlify.app/login/")
     cy.get(':nth-child(5) > .u-button').click()
     cy.get('.login--form__email--input > .el-input__inner').type('nnekatix@outlook.com')
     cy.get('.login--form__password--input > .el-input__inner').type('........')

@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules\\.bin\\cypress run",
+    "headed": "npm run test -- --headed",
+    "onChrome": " npm run test -- --browser chrome",
+    "dashboardTest": "npm run test -- --record --key 805be004-da5d-4c19-a36b-20bbb8cccf93 --reporter mochawesome",
+    "mochatest": "npm run test -- -- reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +19,5 @@
     "mocha": "^9.0.3",
     "mochawesome": "^6.2.2"
   },
-  "dependencies": {
-   
-  }
+  "dependencies": {}
 }

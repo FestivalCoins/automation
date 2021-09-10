@@ -1,1 +1,17 @@
-{}
+{
+"defaultCommandTimeout": 6000,
+"projectId": "322mx2",
+  "reporter":"mochawesome",
+
+"env" :{
+
+    "url":"https://tix-staging.netlify.app/"
+},
+"retries": {
+    
+    "runMode": 2,
+    "openMode": 0
+  }
+
+
+}

@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-15T12:24:43.799Z",
+    "end": "2021-08-15T12:24:44.623Z",
+    "duration": 824,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9743acb8-e662-4d45-9cbd-96e59081d4d1",
+      "title": "",
+      "fullFile": "cypress/integration/Update personal info.js",
+      "file": "cypress/integration/Update personal info.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7d05b033-f896-4b19-8fd8-eb5eeebdbcef",
+          "title": "My First Test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Update personal information on settings",
+              "fullTitle": "My First Test suite Update personal information on settings",
+              "timedOut": null,
+              "duration": 711,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env(\"url\"));\ncy.get(':nth-child(5) > .u-button').click();\ncy.get('.login--form__email--input > .el-input__inner').type('nnekatix@outlook.com');\ncy.get('.login--form__password--input > .el-input__inner').type('........');\ncy.get('.login--form__buttons > .u-button').click();\ncy.wait(5000);\ncy.get('.events--page__header--text').should('be.visible');\ncy.get('.nav-user-actions__name').click();\ncy.contains('account').click(); // var random = cy.generaterandom(5)\n// console.log(cy.generaterandom(5))\n//cy.get(':nth-child(1) > .el-form > :nth-child(1) > .el-form-item__content > .el-input > .el-input__inner').clear().type(cy.generaterandom(5))\ncy.get(':nth-child(1) > .el-form > :nth-child(2) > .el-form-item__content > .el-input > .el-input__inner').clear().type('07036982284');\ncy.get(':nth-child(1) > .el-form > .u-button').click();\ncy.contains('Profile Updated').should('be.visible');\ncy.get(':nth-child(2) > .el-form > :nth-child(1) > .el-form-item__content > .el-input > .el-input__inner').type('........');\ncy.get(':nth-child(2) > .el-form > :nth-child(2) > .el-form-item__content > .el-input > .el-input__inner').type('........');\ncy.get(':nth-child(3) > .el-form-item__content > .el-input > .el-input__inner').type('........');\ncy.get('#pane-profile > :nth-child(2) > .el-form > .u-button').click();\ncy.contains('Password Updated').should('be.visible'); //cy.get('#tab-settings > .tab__header').click()\n//cy.get(':nth-child(4) > .el-radio__input').check()",
+              "err": {
+                "message": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n\nhttps://on.cypress.io/visit",
+                "estack": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n\nhttps://on.cypress.io/visit\n    at Context.visit (http://localhost:64715/__cypress/runner/cypress_runner.js:140098:19)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:64715/__cypress/tests?p=cypress\\integration\\Update%20personal%20info.js:102:8)",
+                "diff": null
+              },
+              "uuid": "a6ca7bfe-305e-420a-b0a7-eaecafd88c1a",
+              "parentUUID": "7d05b033-f896-4b19-8fd8-eb5eeebdbcef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a6ca7bfe-305e-420a-b0a7-eaecafd88c1a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 711,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
