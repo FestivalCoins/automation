@@ -21,7 +21,7 @@ describe('Test', function () {
 })
 
 it('create free ticket',function(){
- const Ticket = new ticket()  
+const Ticket = new ticket()  
  cy.contains('tickets sold').click() 
  Ticket.ticketTab().click()
  Ticket.newTicket().click()

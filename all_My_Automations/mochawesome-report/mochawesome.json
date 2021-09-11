@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-09-10T15:25:21.422Z",
-    "end": "2021-09-10T15:25:39.124Z",
-    "duration": 17702,
+    "start": "2021-09-10T15:37:55.918Z",
+    "end": "2021-09-10T15:38:11.410Z",
+    "duration": 15492,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "76f242c9-a994-4b9d-a2dd-edf727d91c96",
+      "uuid": "2a1ab7d5-477d-4a29-bb09-0a566b4d464b",
       "title": "",
       "fullFile": "cypress/integration/Update personal info.js",
       "file": "cypress/integration/Update personal info.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e4f53bbb-265a-4d25-9f6a-c5400709b125",
+          "uuid": "5a2526ac-9348-4c48-8468-d7ecc858f4f2",
           "title": "My First Test suite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Update personal information on settings",
               "fullTitle": "My First Test suite Update personal information on settings",
               "timedOut": null,
-              "duration": 16564,
+              "duration": 14087,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (https://tix-staging.netlify.app/__cypress/runner/cypress_runner.js:136226:17)\n    at Context.<anonymous> (https://tix-staging.netlify.app/__cypress/runner/cypress_runner.js:153308:21)\nFrom Your Spec Code:\n    at Context.eval (https://tix-staging.netlify.app/__cypress/tests?p=cypress\\integration\\Update%20personal%20info.js:119:85)",
                 "diff": null
               },
-              "uuid": "56761d78-1b36-4d9c-b383-d334e9fae2ce",
-              "parentUUID": "e4f53bbb-265a-4d25-9f6a-c5400709b125",
+              "uuid": "bd347993-3649-457f-9421-7f3c3aeb7f60",
+              "parentUUID": "5a2526ac-9348-4c48-8468-d7ecc858f4f2",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "56761d78-1b36-4d9c-b383-d334e9fae2ce"
+            "bd347993-3649-457f-9421-7f3c3aeb7f60"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 16564,
+          "duration": 14087,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

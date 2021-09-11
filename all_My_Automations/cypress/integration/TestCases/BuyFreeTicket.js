@@ -26,7 +26,8 @@ it('Buy free ticket',function(){
  BuyTicket.buyerPnumber().type(this.data.buyerPnumber)
  BuyTicket.createorder().should("be.visible")
  BuyTicket.createorder().click()
- cy.contains("successful").should("be.visible")
+  cy.contains("checkout").should("be.visible")
+ 
 
 
 
