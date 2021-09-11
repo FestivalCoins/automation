@@ -27,7 +27,7 @@ describe('Check for intercom link on everypage ', function () {
 })
 
 
-it('Check Settings',function(){
+it.only('Check Settings',function(){
   
   const Settings = new settings()
   Settings.userSetting().click()
