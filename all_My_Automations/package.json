@@ -6,7 +6,7 @@
     "test": "node_modules\\.bin\\cypress run",
     "headed": "npm run test -- --headed",
     "onChrome": " npm run test -- --browser chrome",
-    "dashboardTest": "npm run test -- --record --key 805be004-da5d-4c19-a36b-20bbb8cccf93 --reporter mochawesome",
+    "dashboardTest": "npm run test -- --record --key 54290ee7-b36e-4b82-b907-f3d456ff4c12 --reporter mochawesome",
     "mochatest": "npm run test -- -- reporter mochawesome"
   },
   "author": "",
