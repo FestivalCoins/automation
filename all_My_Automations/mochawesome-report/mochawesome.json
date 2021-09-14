@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-09-11T17:41:41.885Z",
-    "end": "2021-09-11T17:42:01.751Z",
-    "duration": 19866,
+    "start": "2021-09-13T20:20:35.385Z",
+    "end": "2021-09-13T20:20:53.285Z",
+    "duration": 17900,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "86005cd8-de39-4a3c-970a-a22fc72cca47",
+      "uuid": "67ce08d5-b241-4a07-8e54-71c960429709",
       "title": "",
       "fullFile": "cypress/integration/TestCases/singleOnlineEvent.js",
       "file": "cypress/integration/TestCases/singleOnlineEvent.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f924963b-7260-49e9-9aa0-26868b7718ab",
+          "uuid": "591822d8-aabd-426b-a715-708706e4d669",
           "title": "Test",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "create single online event",
               "fullTitle": "Test create single online event",
               "timedOut": null,
-              "duration": 18740,
+              "duration": 16697,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const Event = new _event.default();\nEvent.createnewEvent().click();\nEvent.onlineEvent().click();\nEvent.saveEventType().should('be.enabled');\nEvent.saveEventType().click();\nEvent.eventName().type(this.data.eventName);\nEvent.eventdescription().type(this.data.eventDesc);\nEvent.category().click();\ncy.contains(this.data.category).click();\nconst filepath = 'images/banner.jpg';\ncy.get('input[type=\"file\"]').attachFile(filepath);\nEvent.uploadImage().click();\ncy.wait(3000);\nEvent.eventStartDay().type(this.data.startDay);\nEvent.eventStartTime().type(this.data.endTime);\nEvent.eventEndDay().clear().type(this.data.endDay);\nEvent.eventEndTime().clear().type(this.data.endTime);\nEvent.website().type(this.data.website);\nEvent.saveEvent().click();\nconst Ticket = new _ticket.default();\nTicket.selectLinkType();\nTicket.addLink();\nTicket.saveLink().should('be.visible');\nTicket.saveLink().click();",
               "err": {},
-              "uuid": "9ba7390d-f7f5-4b04-b679-fb0be96bcb1f",
-              "parentUUID": "f924963b-7260-49e9-9aa0-26868b7718ab",
+              "uuid": "d9117dbc-75c6-4dc2-ad22-a84378a24ffa",
+              "parentUUID": "591822d8-aabd-426b-a715-708706e4d669",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9ba7390d-f7f5-4b04-b679-fb0be96bcb1f"
+            "d9117dbc-75c6-4dc2-ad22-a84378a24ffa"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 18740,
+          "duration": 16697,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
