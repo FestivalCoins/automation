@@ -1,0 +1,23 @@
+{
+  "name": "all_my_automations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headed": "npm run test -- --headed",
+    "onChrome": " npm run test -- --browser chrome",
+    "dashboardTest": "npm run test -- --record --key 54290ee7-b36e-4b82-b907-f3d456ff4c12 --reporter mochawesome",
+    "mochatest": "npm run test -- -- reporter mochawesome"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^9.0.0",
+    "cypress-file-upload": "^5.0.8",
+    "gmail-tester-extended": "^1.1.2",
+    "mocha": "^9.1.3",
+    "mochawesome": "^7.0.1"
+  },
+  "dependencies": {}
+}

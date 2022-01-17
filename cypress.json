@@ -1,17 +1,5 @@
 {
-"defaultCommandTimeout": 6000,
-"projectId": "m9incf",
-  "reporter":"mochawesome",
-
-"env" :{
-
-    "url":"https://tix-staging.netlify.app/"
-},
-"retries": {
-    
-    "runMode": 2,
-    "openMode": 0
-  }
-
-
+  "projectId": "m9incf",
+  "defaultCommandTimeout": 10000,
+  "experimentalSessionSupport": true
 }
