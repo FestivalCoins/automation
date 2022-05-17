@@ -4,7 +4,7 @@ import ticket from '../PageObjects/ticket'
 import discountCode from '../PageObjects/discountCode'
 import event from '../PageObjects/event'
 import theme from '../PageObjects/theme'
-//import { type } from 'cypress/types/jquery'
+
 
 describe('Test', function () {
     before(function(){
@@ -27,11 +27,10 @@ it('Create Single Live event',function(){
  const Theme = new theme()
  const Ticket = new ticket()
   Event.createnewEvent().click()
-  Event.liveEvent().click()
+  Event.onlineEvent().click()
   Event.saveEventType().click()
   Event.eventName().type("sample22")
   Event.eventdescription().type("another randmo")
-Event.address().type("random location around")
 Event.category().click()
 Event.eventStartDay().type("December 13, 2022")
 Event.eventStartTime().type("00:00")
@@ -61,10 +60,11 @@ Ticket.ticketDesc().type("it doesnt need to say anything")
 Ticket.ticketquantity().type("20")
 Ticket.ticketName().type("2000")
 Ticket.saveTicket().click()
-Ticket.ticketHamburgerOption().select('Edit').click()
-
-
-
+Ticket.saveNContinue().click()
+//Ticket.ticketHamburgerOption().click().contains("edit").click()
+Ticket.publishEvent().click()
+cy.get('.buttons > .u-button').should('be.visible')
+Ticket.CTAtoAddLink().click()
 
 })
 

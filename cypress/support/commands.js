@@ -1,5 +1,6 @@
 
 import login from '../integration/PageObjects/login'
+import event from '../integration/PageObjects/event'
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -16,7 +17,7 @@ import login from '../integration/PageObjects/login'
 
  Cypress.Commands.add('logon', (email, password) => { 
    const Login = new login()
-  cy.visit("https://deploy-preview-461--tix-staging.netlify.app/login/")
+  cy.visit("https://tix-staging.netlify.app/login")
   Login.loginEmail().type('nneka@tix.africa')
   Login.loginPassword().type('........')
   Login.save().click();
@@ -28,6 +29,22 @@ Cypress.Commands.add('rando',() => {
   const disCode = `Tix${code}`
 
 })
+Cypress.Commands.add('createEvent',() => { 
+  const Event = new event()
+   Event.createnewEvent().click()
+   Event.liveEvent().click()
+   Event.saveEventType().click()
+   Event.eventName().type("sample22")
+   Event.eventdescription().type("another randmo")
+ Event.address().type("random location around")
+ Event.category().click()
+ Event.eventStartDay().type("December 13, 2022")
+ Event.eventStartTime().type("00:00")
+ Event.eventEndDay().type("December 13, 2022")
+ Event.eventEndTime().clear().type("12:00")
+ Event.saveEvent().click()
+ cy.contains("Event Page Theme").should('be.visible')
+  })
 
 /* Cypress.Commands.add('generaterandom', (length) => {
     var result           = '';

@@ -23,4 +23,7 @@ intercomIcon(){
     return cy.get('.intercom-lightweight-app-launcher-icon-open').should("be.visible")
 }
 
-}export default login;
+
+}
+
+export default login;
